@@ -13,6 +13,6 @@ app.use(express.static('public'));
 app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
-app.listen(3001, () => { // announces a successful server connection
+app.listen(PORT, () => { // announces a successful server connection
     console.log(`API server now on ${PORT}`);
 });
